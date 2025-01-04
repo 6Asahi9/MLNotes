@@ -30,3 +30,13 @@ You can capture more factors using a tree that has more "splits." These are call
 You predict the price of any house by tracing through the decision tree, always picking the path corresponding to that house's characteristics. The predicted price for the house is at the bottom of the tree. The point at the bottom where we make a prediction is called a leaf.
 
 The splits and values at the leaves will be determined by the data, so it's time for you to check out the data you will be working with.
+
+### webpage : https://www.kaggle.com/code/dansbecker/how-models-work/tutorial
+### Data:
+* Housing Prices Competition for Kaggle Learn Users:
+* Melbourne Housing Snapshot:
+* Mobile Price Classification:
+
+kaggle kernels output dansbecker/how-models-work -p /path/to/dest
+
+
