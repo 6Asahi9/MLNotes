@@ -11,7 +11,7 @@ Machine learning works the same way. We'll start with a model called the Decisio
 
 For simplicity, we'll start with the simplest possible decision tree.
 
-![screenshot](../../images/i1.png)
+![screenshot](../images/i1.png)
 
 It divides houses into only two categories. The predicted price for any house under consideration is the historical average price of houses in the same category.
 
@@ -19,13 +19,13 @@ We use data to decide how to break the houses into two groups, and then again to
 
 The details of how the model is fit (e.g. how to split up the data) is complex enough that we will save it for later. After the model has been fit, you can apply it to new data to predict prices of additional homes.
 
-![screenshot](../../images/i2.png)
+![screenshot](../images/i2.png)
 
 The decision tree on the left (Decision Tree 1) probably makes more sense, because it captures the reality that houses with more bedrooms tend to sell at higher prices than houses with fewer bedrooms. The biggest shortcoming of this model is that it doesn't capture most factors affecting home price, like number of bathrooms, lot size, location, etc.
 
 You can capture more factors using a tree that has more "splits." These are called "deeper" trees. A decision tree that also considers the total size of each house's lot might look like this:
 
-![screenshot](../../images/i3.png)
+![screenshot](../images/i3.png)
 
 You predict the price of any house by tracing through the decision tree, always picking the path corresponding to that house's characteristics. The predicted price for the house is at the bottom of the tree. The point at the bottom where we make a prediction is called a leaf.
 
