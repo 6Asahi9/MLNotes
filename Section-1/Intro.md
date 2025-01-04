@@ -37,6 +37,13 @@ The splits and values at the leaves will be determined by the data, so it's time
 * Melbourne Housing Snapshot:
 * Mobile Price Classification:
 
-kaggle kernels output dansbecker/how-models-work -p /path/to/dest
+for windows: 
+
+kaggle kernels output dansbecker/how-models-work -p C:\Users\YourUsername\Desktop
+
+for mac/linux:
+
+kaggle kernels output dansbecker/how-models-work -p /Users/YourUsername/Desktop
+
 
 
