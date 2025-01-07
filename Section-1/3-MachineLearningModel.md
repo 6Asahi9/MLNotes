@@ -27,6 +27,7 @@ For now, we'll build a model with only a few features. Later on you'll see how t
 We select multiple features by providing a list of column names inside brackets. Each item in that list should be a string (with quotes).
 
 Here is an example:
+
 ![](../images/image_2025-01-07_195131776.png)
 
 Let's quickly review the data we'll be using to predict house prices using the describe method and the head method, which shows the top few rows.
