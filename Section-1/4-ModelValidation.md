@@ -8,6 +8,7 @@ You'd first need to summarize the model quality into an understandable way. If y
 There are many metrics for summarizing model quality, but we'll start with one called Mean Absolute Error (also called MAE). Let's break down this metric starting with the last word, error.
 
 The prediction error for each house is:
+
 ![](../images/image_2025-01-08_105710575.png)
 
 So, if a house cost $150,000 and you predicted it would cost $100,000 the error is $50,000.
@@ -17,6 +18,7 @@ With the MAE metric, we take the absolute value of each error. This converts eac
 On average, our predictions are off by about X.
 
 To calculate MAE, we first need a model and Once we have a model, here is how we calculate the mean absolute error:
+
 ![](../images/image_2025-01-08_105826275.png)
 
 ### The Problem with "In-Sample" Scores¶
@@ -36,6 +38,7 @@ Since models' practical value come from making predictions on new data, we measu
 The scikit-learn library has a function train_test_split to break up the data into two pieces. We'll use some of that data as training data to fit the model, and we'll use the other data as validation data to calculate mean_absolute_error.
 
 Here is the code:
+
 ![](../images/image_2025-01-08_105955370.png)
 
 ### Wow!¶
