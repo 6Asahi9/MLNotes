@@ -58,5 +58,3 @@ rf_val_mae = mean_absolute_error(val_y, rf_val_prediction)
 # Print the MAE for Random Forest
 print("Validation MAE for Random Forest Model: {}".format(rf_val_mae))
 
-# (Optional) Check your answers if using Kaggle environment
-# step_2.check()
