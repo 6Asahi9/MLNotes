@@ -13,6 +13,7 @@ df = pd.read_csv('dataset.csv', delimiter=';')
 #Split the dataset into features (X) and target (y):
 
 X = df.iloc[:, :-1].values  # All rows, all columns except the last (features)
+# or can use df.drop(columns=['target']) or df.drop(['C'], axis=1)
 y = df.iloc[:, -1].values   # All rows, only the last column (target)
 
 #X: Contains input features (independent variables).
