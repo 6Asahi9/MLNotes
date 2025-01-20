@@ -16,6 +16,8 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 print(X_train, X_test)
 
+#--------------------------------------------------------------------------------------
+
 #fitting the logistic Regression
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(random_state=0)
@@ -26,6 +28,8 @@ print(prediction) #answer is no or 0
 
 y_pred = classifier.predict(X_test).reshape(-1,1)
 print(np.concatenate((y_pred, y_test.reshape(-1,1)),1))
+
+#--------------------------------------------------------------------------------------
 
 #lets test the accuracy
 from sklearn.metrics import accuracy_score
@@ -57,6 +61,8 @@ print(cm)
 
 #57 corret predictions of class 0 but 1 incorrect of class 1 and
 #17 correct predictions of class 1 but 5 incorrect of class 0
+
+#--------------------------------------------------------------------------------------
 
 # Visualizing the training set
 
