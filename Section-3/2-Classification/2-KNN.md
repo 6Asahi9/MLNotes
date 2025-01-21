@@ -1,14 +1,14 @@
 ### mix data / PCA included 
 
-![](../../images/image_2025-01-21_175008216.png)
+![](../../images/image_2025-01-21_181107795.png)
 
 ### training PCA
 
-![](../../images/image_2025-01-21_175138231.png)
+![](../../images/image_2025-01-21_181154420.png)
 
 ### test PCA
 
-![](../../images/image_2025-01-21_175250990.png)
+![](../../images/image_2025-01-21_181238029.png)
 
 ### original training (HEAVY)
 
