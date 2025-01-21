@@ -61,20 +61,22 @@ Z = Z.reshape(xx.shape)
 plt.contourf(xx, yy, Z, alpha=0.75, cmap=plt.cm.coolwarm)
 
 # Plot the training points
-plt.scatter(X_train_reduced[:, 0], X_train_reduced[:, 1], c=y_train, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="0")
+train_scatter = plt.scatter(X_train_reduced[:, 0], X_train_reduced[:, 1], c=y_train, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="0")
 
 # Plot the test points
-plt.scatter(X_test_reduced[:, 0], X_test_reduced[:, 1], c=y_pred, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="1")
+test_scatter = plt.scatter(X_test_reduced[:, 0], X_test_reduced[:, 1], c=y_pred, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="1")
 
 #modify the numbers on the x and y axes
 plt.xticks(ticks=np.linspace(x_min, x_max, 6), labels=[10, 20, 30, 40, 50, 60])
 plt.yticks(ticks=np.linspace(y_min, y_max, 7), labels=["20k", "40k", "60k", "80k", "100k", "120k", "140k"])
 
+# Add a legend for clearer interpretation
+plt.legend(handles=[train_scatter, test_scatter], labels=['NO', 'yes'], title="Class Categories")
+
 # Set labels and title
 plt.title('KNN Classifier Decision Boundary (PCA Reduced)')
-plt.xlabel('Principal Component 1')
-plt.ylabel('Principal Component 2')
-plt.legend()
+plt.xlabel('Salary')
+plt.ylabel('age')
 plt.show()
 
 #---------------------------------------------------------------------------------------------------------------
@@ -103,7 +105,7 @@ plt.figure(figsize=(10, 5))
 plt.contourf(xx, yy, Z, alpha=0.75, cmap=plt.cm.coolwarm)
 
 # Plot the training points
-plt.scatter(X_train_reduced[:, 0], X_train_reduced[:, 1], c=y_train, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="Train Data")
+scatter = plt.scatter(X_train_reduced[:, 0], X_train_reduced[:, 1], c=y_train, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="Train Data")
 
 # Modify the numbers on the x and y axes
 plt.xticks(ticks=np.linspace(x_min, x_max, 6), labels=[10, 20, 30, 40, 50, 60])
@@ -113,11 +115,10 @@ plt.yticks(ticks=np.linspace(y_min, y_max, 7), labels=["20k", "40k", "60k", "80k
 plt.title('KNN Classifier Decision Boundary (Training Data)')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
-plt.legend()
+plt.legend(handles=scatter.legend_elements()[0], labels=['No', 'Yes'], title="Car Purchase Decision")
 plt.show()
 
 #---------------------------------------------------------------------------------------------------------------
-
 #test set
 # PLOT 2: Test data only
 y_pred = classifier.predict(X_test_reduced)
@@ -128,7 +129,7 @@ plt.figure(figsize=(10, 5))
 plt.contourf(xx, yy, Z, alpha=0.75, cmap=plt.cm.coolwarm)
 
 # Plot the test points
-plt.scatter(X_test_reduced[:, 0], X_test_reduced[:, 1], c=y_pred, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="Test Data")
+scatter = plt.scatter(X_test_reduced[:, 0], X_test_reduced[:, 1], c=y_pred, marker='o', edgecolor='k', cmap=plt.cm.coolwarm, label="Test Data")
 
 # Modify the numbers on the x and y axes
 plt.xticks(ticks=np.linspace(x_min, x_max, 6), labels=[10, 20, 30, 40, 50, 60])
@@ -138,7 +139,7 @@ plt.yticks(ticks=np.linspace(y_min, y_max, 7), labels=["20k", "40k", "60k", "80k
 plt.title('KNN Classifier Decision Boundary (Test Data)')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
-plt.legend()
+plt.legend(handles=scatter.legend_elements()[0], labels=['No', 'Yes'], title="Car Purchase Decision")
 plt.show()
 
 #---------------------------------------------------------------------------------------------------------------
