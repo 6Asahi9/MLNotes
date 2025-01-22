@@ -27,7 +27,7 @@ print(accuracy_score(y_test, y_pred))
 #91.25
 
 #----------------------------------------------------------------------------------------------------------------------
-
+### trianing Set , (NO LINE)
 # Import PCA
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
@@ -53,7 +53,7 @@ plt.colorbar(label="Class Labels")
 plt.show()
 
 #----------------------------------------------------------------------------------------------------------------------
-
+# test Set , (NO LINE)
 # Plot the test set individually
 plt.figure(figsize=(10, 6))
 plt.scatter(
