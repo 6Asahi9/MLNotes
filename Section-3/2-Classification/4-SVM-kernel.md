@@ -1,3 +1,6 @@
+### smooth version train set
+
+![](../../images/image_2025-01-24_220235657.png)
 
 ### orignal train set
 
