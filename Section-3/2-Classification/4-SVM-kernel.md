@@ -1,10 +1,14 @@
+### less pixels version
+
+![](../../images/image_2025-01-24_220235657.png)
+
 ### smooth train set
 
 ![](../../images/image_2025-01-25_181933679.png)
 
-### smooth version train set
+### smooth test set
 
-![](../../images/image_2025-01-24_220235657.png)
+![](../../images/image_2025-01-25_182342838.png)
 
 ### orignal train set
 
