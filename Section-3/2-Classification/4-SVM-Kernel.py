@@ -62,6 +62,7 @@ plt.show()
 
 #-----------------------------------------------------------------------------------------------------
 #smooth version train 
+from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
 X_train_2d = pca.fit_transform(X_train)
 
