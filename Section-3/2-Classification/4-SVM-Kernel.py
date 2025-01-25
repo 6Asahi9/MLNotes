@@ -27,6 +27,40 @@ print(cm)
 accuracy_score(y_test, y_pred)
 
 #-----------------------------------------------------------------------------------------------------
+#less pixels version
+from matplotlib.colors import ListedColormap
+
+# Adjust meshgrid step size for faster computation
+step_size = 1.0  # Increase from 0.25 to 1.0 to reduce computation
+X_set, y_set = sc.inverse_transform(X_train), y_train
+X1, X2 = np.meshgrid(np.arange(start=X_set[:, 0].min() - 10, stop=X_set[:, 0].max() + 10, step=step_size),
+                     np.arange(start=X_set[:, 1].min() - 1000, stop=X_set[:, 1].max() + 1000, step=step_size))
+
+# Reduce the precision of predictions
+Z = classifier.predict(sc.transform(np.array([X1.ravel(), X2.ravel()]).T)).reshape(X1.shape)
+
+# Plot contour with lighter alpha for smooth display
+plt.contourf(X1, X2, Z, alpha=0.6, cmap=ListedColormap(['#FA8072', '#1E90FF']))
+plt.xlim(X1.min(), X1.max())
+plt.ylim(X2.min(), X2.max())
+
+# Downsample scatter points if dataset is too large
+for i, j in enumerate(np.unique(y_set)):
+    mask = y_set == j
+    if mask.sum() > 100:  # Downsample if more than 100 points
+        idx = np.random.choice(np.where(mask)[0], size=100, replace=False)  # Random sample
+        plt.scatter(X_set[idx, 0], X_set[idx, 1], c=ListedColormap(['#FA8072', '#1E90FF'])(i), label=j)
+    else:
+        plt.scatter(X_set[mask, 0], X_set[mask, 1], c=ListedColormap(['#FA8072', '#1E90FF'])(i), label=j)
+
+# Add labels and title
+plt.title('Kernel SVM (Training set)')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
+plt.legend()
+plt.show()
+
+#-----------------------------------------------------------------------------------------------------
 #smooth version train 
 pca = PCA(n_components=2)
 X_train_2d = pca.fit_transform(X_train)
