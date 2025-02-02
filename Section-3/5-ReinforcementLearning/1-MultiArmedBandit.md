@@ -16,3 +16,22 @@ The challenge is to find a balance between these two strategies, so you don’t 
 
 ### Why It's Important:
 The MAB problem is fundamental to understanding Reinforcement Learning because it introduces the idea of reward maximization through sequential decision-making—a key element in RL
+
+
+### Example: Miya and the Treat Dispensers 🐾🍖
+Imagine Miya has three treat dispensers, and she’s trying to figure out which one gives her the most delicious treats. Each dispenser has an unknown chance of giving her a treat (with different probabilities), and Miya needs to decide how many times to press each dispenser’s button to maximize her treat intake.
+
+### The Setup:
+* Dispenser 1 gives Miya a treat 70% of the time.
+* Dispenser 2 gives Miya a treat 50% of the time.
+* Dispenser 3 gives Miya a treat 30% of the time.
+
+### The Problem:
+Miya doesn’t know these probabilities when she starts. She has to explore each dispenser to learn which one gives the most treats, but if she spends too much time experimenting, she might miss out on the rewards. The goal is to balance between exploring (trying new dispensers) and exploiting (sticking to the one that gives her the best treat rate based on what she’s learned).
+
+### The Process (Exploration vs. Exploitation):
+* Exploration: Miya could randomly press any dispenser’s button, hoping to discover which one gives the best treats. But, if she keeps pressing the dispenser with a 30% success rate, she’ll end up with fewer treats than she could’ve had.
+
+* Exploitation: After a few trials, Miya notices that Dispenser 1 gives her treats more often than the others. So, she starts pressing Dispenser 1 most of the time, maximizing her treat intake.
+
+However, Miya must still occasionally try the other dispensers to make sure she’s not missing out on any hidden gems. This is the balance she needs to strike—if she never tries Dispenser 2 or 3, she might miss a lucky surprise
