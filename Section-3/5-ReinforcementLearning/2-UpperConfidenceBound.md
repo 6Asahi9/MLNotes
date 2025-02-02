@@ -24,44 +24,10 @@ Let’s say Miya tries Dispenser 1, Dispenser 2, and Dispenser 3 once each. Afte
 
 2. Confidence Calculations: After these initial trials, Miya now calculates the confidence bounds for each dispenser. She takes the average reward (treats per trial) and adds a term that represents her uncertainty—this term gets smaller as she tries a dispenser more and larger if she hasn’t explored it as much.
 
-Let’s say she uses the formula:
+### Let’s say she uses the formula:
 
-UCB
-=
-Average Reward
-+
-2
-ln
-⁡
-(
-𝑡
-)
-𝑛
-UCB=Average Reward+ 
-n
-2ln(t)
-​
+![](../../images/image_2025-02-02_204451396.png)
  
-​
- 
-Where:
-
-t = Total number of trials so far.
-n = Number of times this dispenser has been tried.
-The term 
-2
-ln
-⁡
-(
-𝑡
-)
-𝑛
-n
-2ln(t)
-​
- 
-​
-  represents the uncertainty (the "upper bound").
 Choosing the Best Dispenser: Based on the calculations, Miya will select the dispenser with the highest UCB value. This means if Dispenser 3 hasn't been tried much, it might still get a high UCB value because of the uncertainty, even though it has a lower average reward.
 
 * Exploit and Explore: As Miya keeps exploring and getting more data, the confidence bounds shrink and the strategy shifts more toward exploitation (choosing the dispenser with the best average reward), but it still balances with occasional exploration of the less-tried dispensers.
