@@ -36,3 +36,7 @@ Choosing the Best Dispenser: Based on the calculations, Miya will select the dis
 Miya uses the UCB strategy to explore the dispensers in such a way that she maximizes the number of treats over time, while still being careful to explore the less-tried dispensers to ensure she doesn't miss out on any hidden gems.
 
 This strategy is more efficient than simple random exploration because Miya uses both her experience and uncertainty to decide which dispenser to try next. Over time, she will increasingly focus on the dispenser that gives her the most treats, but she’ll still keep an eye on the others just in case. 😼🍖
+
+### visual result from python file 
+
+![](../../images/image_2025-02-03_215307255.png)
