@@ -40,3 +40,7 @@ This strategy is more efficient than simple random exploration because Miya uses
 ### visual result from python file 
 
 ![](../../images/image_2025-02-03_215307255.png)
+
+### formula used in python file 
+
+![](../../images/image_2025-02-03_215504902.png)
