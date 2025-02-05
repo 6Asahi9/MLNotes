@@ -55,3 +55,5 @@ TS models the uncertainty of each option using a probability distribution (Beta 
 ### Miya's TS Strategy:
 
 If Bowl A has a 75% success rate and Bowl B has 40%, she'll mostly pick A but sometimes randomly test B to be sure.
+
+![](../../images/image_2025-02-05_084255625.png)
