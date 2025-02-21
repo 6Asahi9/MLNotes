@@ -16,6 +16,8 @@ Kernel Principal Component Analysis (Kernel PCA) is an extension of the traditio
 
 ![](/images/image_2025-02-21_222237386.png)
 
+*add n_components here too just like regular PCA
+
 ### Key Points:
 * KernelPCA(kernel="rbf", gamma=15): Here, the kernel is set to RBF (Radial Basis Function) with the gamma parameter controlling the spread. You could replace "rbf" with "poly" or "sigmoid" to try other kernel functions.
 * fit_transform(X): This applies the Kernel PCA transformation to the input data X, projecting it into a higher-dimensional space where the data can potentially become linearly separable.
