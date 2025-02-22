@@ -23,3 +23,5 @@ Kernel Principal Component Analysis (Kernel PCA) is an extension of the traditio
 * fit_transform(X): This applies the Kernel PCA transformation to the input data X, projecting it into a higher-dimensional space where the data can potentially become linearly separable.
 
 ![](/images/image_2025-02-21_222344055.png)
+
+![](/images/image_2025-02-22_113539971.png)
