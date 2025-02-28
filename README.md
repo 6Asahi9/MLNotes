@@ -1,6 +1,6 @@
-### Resources used :
+### Resources used while making these repo:
 
-*Websites
+* Websites:
 
 1. [Chatgtp](https://chatgpt.com)
 2. [Kaggle](https://www.kaggle.com)
