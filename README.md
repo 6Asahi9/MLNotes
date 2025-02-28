@@ -4,6 +4,7 @@
 
 1. [Chatgtp](https://chatgpt.com)
 2. [Kaggle](https://www.kaggle.com)
+3. [Sk-learn](https://scikit-learn.org/stable/)
 
 * Youtubers:
   
