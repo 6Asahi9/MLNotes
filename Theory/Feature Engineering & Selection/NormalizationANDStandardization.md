@@ -54,3 +54,17 @@ Now everything is scaled between [0,1], making it easier to compare!
 
 * When you need values between 0 and 1 (e.g., images, percentages).
 * But! It is sensitive to outliers (we’ll see what that means soon).
+
+### 📌 What is Standardization (Z-score Normalization)?
+Instead of forcing values between 0 and 1, Standardization transforms them based on how far they are from the average jump height (mean 𝜇).
+
+μ (mean) = Average jump height
+
+σ (standard deviation) = Spread of jumps
+
+This method keeps the shape of data intact but shifts it so the average becomes 0 and values are measured in "jump units" (standard deviations).
+
+### 🐾 When to use?
+
+* When data has extreme values (outliers).
+* When jumps have negative and positive variations.
