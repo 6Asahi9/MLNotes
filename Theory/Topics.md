@@ -1,5 +1,6 @@
 ### Advanced Topics to Study & Implement:
 * Feature Engineering & Selection
+* Bias-variance tradeoff
 
 ### Standardization (Min-Max Scaling, Z-score Normalization)
 * Polynomial Features (to capture non-linearity)
