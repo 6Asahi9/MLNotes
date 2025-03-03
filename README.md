@@ -9,3 +9,5 @@
 * Youtubers:
   
 3. [StatQuest with Josh Starmer](https://www.youtube.com/@statquest)
+
+(In many examples, i have used the name "miya" which is refressing to my cat)
