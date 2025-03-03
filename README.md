@@ -10,4 +10,4 @@
   
 3. [StatQuest with Josh Starmer](https://www.youtube.com/@statquest)
 
-(In many examples, i have used the name "miya" which is refressing to my cat)
+(In many examples, i have used the name "miya" which is referring to my cat)
