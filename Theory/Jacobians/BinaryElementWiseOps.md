@@ -1,5 +1,7 @@
 [At 1:27](https://www.youtube.com/watch?v=Ixl3nykKG9M&t=4296s) 
 
+Formula: **F(V,W)=V⊙W**
+
 The person in the video is probably talking about the Jacobian of an element-wise operation (like those binary element-wise ops we talked about earlier).
 
 When they said "all the non-diagonal elements are zero," they mean that the Jacobian matrix is diagonal. Here’s why:
