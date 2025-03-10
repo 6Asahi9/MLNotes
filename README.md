@@ -8,6 +8,7 @@
 
 * Youtubers:
   
-3. [StatQuest with Josh Starmer](https://www.youtube.com/@statquest)
+1. [StatQuest with Josh Starmer](https://www.youtube.com/@statquest)
+2. [Adam Dhalla](https://www.youtube.com/watch?v=Ixl3nykKG9M&t=4296s)
 
 (In many examples, i have used the name "miya" which is referring to my cat)
