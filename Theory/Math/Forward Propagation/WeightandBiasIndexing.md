@@ -55,3 +55,5 @@ W_{ij} = Weight for the connection.
 b_i = Bias for neuron i.
 
 ![](/images/{3352B316-8AA5-4E8E-BEBA-1AC21203FDB6}.png)
+
+![](/images/{3F934EC4-C474-4267-A64F-0180312F1459}.png)
