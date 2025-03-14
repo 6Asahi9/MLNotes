@@ -1,3 +1,5 @@
+![](/images/image_2025-03-14_160508985.png)
+
 A neuron takes inputs, applies weights, adds a bias, and passes the result through an activation function. Here's the core formula:
 
 ![](/images/image_2025-03-14_154034481.png)
