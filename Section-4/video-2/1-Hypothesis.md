@@ -17,3 +17,5 @@ X and get predictions.
 Since 
 y was used in training to find 
 θ, it doesn’t appear in the formula anymore—it’s already "baked into" the model.
+
+NOTE: x0 and x1... xn are all DIFFERENT FEATURES  (not just different values of the same feature).
