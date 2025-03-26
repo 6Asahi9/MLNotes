@@ -8,3 +8,5 @@
 
 ❗❗❗there should be a learning rate alpha but missed writing it ❗❗❗
 ![](/images/image_2025-03-26_211913228.png)
+
+![](/images/image_2025-03-26_215345377.png)
