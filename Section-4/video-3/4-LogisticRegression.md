@@ -6,4 +6,5 @@
 
 ![](/images/image_2025-03-26_194942583.png)
 
+❗❗❗there should be a learning rate alpha but missed writing it ❗❗❗
 ![](/images/image_2025-03-26_211913228.png)
