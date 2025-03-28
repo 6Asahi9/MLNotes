@@ -16,3 +16,4 @@ Limitations 🚧
 
 The Perceptron can only handle linearly separable problems, meaning it can only draw a straight line to classify things. It cannot handle complex problems like XOR (where classes are not separable by a straight line).
 
+![](/images/image_2025-03-28_183537810.png)
