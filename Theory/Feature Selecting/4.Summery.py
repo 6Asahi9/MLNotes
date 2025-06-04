@@ -84,3 +84,13 @@ print(f'R-squared score: {r2}')
 
 # Display the coefficients of the features
 print(f'LASSO Coefficients: {lasso_model.coef_}')
+
+# ---------------------------------------------------------------------------------------------------------
+# Backward elimination: Removed statistically insignificant features based on p-values
+# Forward selection: Added features one by one to improve model performance
+# LASSO: Automatically performed feature selection by shrinking less important features to zero
+
+# Key takeaways
+# Backward elimination is useful when you want to remove features manually based on statistical significance.
+# Forward selection helps identify which features most improve model performance.
+# LASSO is an efficient automatic feature selection method that balances model complexity and predictive power.
