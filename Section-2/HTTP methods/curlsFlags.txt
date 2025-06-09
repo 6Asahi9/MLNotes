@@ -1,0 +1,11 @@
+| Flag | What it does                                |
+| ---- | ------------------------------------------- |
+| `-X` | Specify the method: `GET`, `POST`, etc.     |
+| `-d` | Send data (form-style or raw)               |
+| `-H` | Add custom headers                          |
+| `-i` | Show response headers                       |
+| `-s` | Silent mode (no progress bar/output)        |
+| `-o` | Write output to a file                      |
+| `-w` | **Write custom output format** (more below) |
+| `-L` | Follow redirects                            |
+| `-u` | Set username\:password for basic auth       |
