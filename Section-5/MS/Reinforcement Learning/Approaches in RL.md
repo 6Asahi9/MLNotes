@@ -4,8 +4,10 @@
 
     Q-learning is an off-policy algorithm that aims to learn the Q-value of each state-action pair, which represents the expected reward of taking an action in a particular state and following the optimal policy afterward. The agent updates its Q-values iteratively using the Bellman equation:
 
+![alt text](../images/image.png)
 
-2. Policy-based methods
+
+3. Policy-based methods
 
   In policy-based methods, the agent directly learns the policy without focusing on value functions. These methods are particularly useful in high-dimensional or continuous action spaces.
 
