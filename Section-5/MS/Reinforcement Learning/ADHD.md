@@ -21,6 +21,9 @@ Imagine training a cat (or a robot). You don't **tell** her exactly what to do. 
 * **Action** = What she does (jump, nap, scratch)
 * **State** = What’s happening (Is she hungry? Is it sunny?)
 * **Reward** = Instant feedback! (+1 for finding tuna, -1 for knocking your laptop off)
+* Policy: the strategy the agent follows in choosing actions based on the current state. A policy can be deterministic (always taking the same action in a given state) or stochastic (taking different actions with certain probabilities).
+* Value function: the expected reward the agent can accumulate starting from a particular state. The value function helps the agent understand which states are more valuable in the long run.
+* Q-function: also known as the action-value function, it represents the expected return from taking an action in a given state and following a policy afterward.
 
 ---
 
