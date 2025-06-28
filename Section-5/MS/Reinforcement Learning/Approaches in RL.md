@@ -21,3 +21,32 @@
 
   When combined with deep neural networks, RL is referred to as deep reinforcement learning (DRL). DRL allows the agent to handle complex, high-dimensional environments by using deep networks to approximate the value function or policy. Famous examples of DRL include deep Q-networks, which was used to master video games like Atari.
 
+5. Model-Based RL
+Everything above is model-free → the agent doesn’t know how the world works — it just explores.
+
+But in model-based RL, the agent:
+
+Learns or is given a model of the environment!
+
+Then it:
+
+Simulates the future
+
+Plans steps ahead (like chess)
+
+Examples:
+
+Dyna-Q
+
+MuZero (DeepMind's game master)
+
+💡 It’s like Miya drawing a little invisible path to the tuna bowl before she moves.
+
+| Category     | Method            | Notes                                              |
+| ------------ | ----------------- | -------------------------------------------------- |
+| Value-Based  | Q-learning, SARSA | Learns Q-values, uses tables or nets               |
+| Policy-Based | REINFORCE         | Directly learns policy, great for continuous space |
+| Actor–Critic | A2C, PPO          | Combines both, very common                         |
+| Deep RL      | DQN, PPO, DDPG    | Scales up with neural nets                         |
+| Model-Based  | Dyna-Q, MuZero    | Learns how the world works internally              |
+
