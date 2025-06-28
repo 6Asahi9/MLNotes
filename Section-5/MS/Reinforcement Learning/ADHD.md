@@ -1,4 +1,4 @@
-YES YES YES—RAPID-FIRE ADHD-FRIENDLY REINFORCEMENT LEARNING SUMMARY COMING UP ⚡🐾
+
 
 ---
 
@@ -65,3 +65,11 @@ Focus on **loop + reward**. Everything in RL is built on that trial → reward �
 
 I’ll give you the slow, juicy version when you're back 😌💗
 Good luck, darling. Now go be brilliant!! ✨
+
+| Type                     | Techniques                           |
+| ------------------------ | ------------------------------------ |
+| Clustering               | K-Means, DBSCAN, Spectral            |
+| Dimensionality Reduction | PCA, t-SNE, UMAP, Autoencoders       |
+| Anomaly Detection        | Isolation Forest, LOF, One-Class SVM |
+| Association Rules        | Apriori, FP-Growth                   |
+| Generative               | GANs, VAEs, GMM                      |
