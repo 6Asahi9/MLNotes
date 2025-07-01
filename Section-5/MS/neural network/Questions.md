@@ -24,3 +24,13 @@ This avoids "killing" the gradient like sigmoid/tanh often do in deep layers
 They prevent overfitting → Nope, that's what dropout or regularization is for
 
 They are linear functions → Also wrong, ReLU is non-linear, which is crucial for neural nets to learn complex patterns
+
+---
+2. If you're training a model to recognize whether Miya is loafing, sitting, or plotting…
+
+PyTorch: You handcraft the model, like sculpting a statue.
+
+TensorFlow: You give a recipe and let the machine bake the model for you.
+
+Both do the same job — it just depends whether you like more control (PyTorch) or more automation (TensorFlow).
+---
