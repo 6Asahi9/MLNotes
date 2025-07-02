@@ -4,6 +4,10 @@ import numpy as np
 from tensorflow.keras.datasets import mnist
 
 ### 🧠 GAN SECTION ###
+(_, _), (X_test, _) = mnist.load_data()
+X_test = (X_test.astype(np.float32) - 127.5) / 127.5
+X_test = X_test.reshape(-1, 784)
+
 
 # Generator: Takes random noise and tries to create something that looks like a real image
 def build_generator():
