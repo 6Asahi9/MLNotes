@@ -48,3 +48,52 @@ data['padded_tokenized'] = data['tokenized'].apply(
 
 # 👀 Quick peek to confirm transformation
 print(data[['cleaned_text', 'label', 'padded_tokenized']].head())
+
+# 🧠 Load a pretrained BERT model for 3-way classification
+from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
+
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=3)
+
+# ⚙️ Set training parameters: batch size, learning rate, logging, etc.
+training_args = TrainingArguments(
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    num_train_epochs=3,
+    output_dir='./results',
+    evaluation_strategy="epoch",      # Validate after each epoch
+    logging_strategy="epoch",         # Log training progress every epoch
+    logging_dir='./logs',
+    save_strategy="epoch",            # Save model checkpoint per epoch
+    load_best_model_at_end=True       # Restore best checkpoint after training
+)
+
+# 🎯 Initialize Trainer with training loop setup and dataset
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset.with_format("torch", columns=["input_ids", "attention_mask", "label"]),
+    eval_dataset=val_dataset.with_format("torch", columns=["input_ids", "attention_mask", "label"])
+)
+
+# 🚀 Start training the model
+trainer.train()
+
+# 📊 Evaluate performance on test set
+from sklearn.metrics import accuracy_score, f1_score
+
+test_dataset = test_dataset.with_format("torch", columns=["input_ids", "attention_mask", "label"])
+predictions = trainer.predict(test_dataset)
+preds = predictions.predictions.argmax(-1)
+labels = test_dataset["label"]
+
+# 📈 Calculate evaluation metrics
+accuracy = accuracy_score(labels, preds)
+f1 = f1_score(labels, preds, average="weighted")
+
+print(f"Accuracy: {accuracy}, F1 Score: {f1}")
+
+# 💾 Save the trained model and tokenizer for future use
+model.save_pretrained("./fine_tuned_bert")
+tokenizer.save_pretrained("./fine_tuned_bert")
+print("Model saved successfully!")
+
