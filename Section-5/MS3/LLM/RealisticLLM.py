@@ -91,6 +91,11 @@ def process(row):
 processed = data.apply(process, axis=1, result_type="expand")
 data["input_ids"] = processed["input_ids"]
 data["attention_mask"] = processed["attention_mask"]
+
+# Then and only then, does this make sense:
+train_dataset = Dataset.from_pandas(data)
+train_dataset = train_dataset.with_format("torch", columns=["input_ids", "attention_mask", "label"])
+# Because now train_dataset does have those columns.
 # -----------------------------------------------------------------------
 
 # 🎯 Initialize Trainer with training loop setup and dataset
