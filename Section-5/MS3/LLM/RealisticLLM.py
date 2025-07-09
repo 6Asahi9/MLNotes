@@ -66,6 +66,32 @@ training_args = TrainingArguments(
     save_strategy="epoch",            # Save model checkpoint per epoch
     load_best_model_at_end=True       # Restore best checkpoint after training
 )
+# ----------------------------------------------------------------------- Added by GPT
+# The data DataFrame looks like this:
+
+# text	label	cleaned_text	tokenized	padded_tokenized
+
+# But Trainer doesn’t train on raw pandas DataFrames.
+# You’re supposed to convert data into a HuggingFace Dataset object, like this:
+from datasets import Dataset
+train_dataset = Dataset.from_pandas(data)
+# But even that isn’t enough.
+# To actually work with BERT, you’re supposed to add two specific keys:
+# "input_ids" → the list of padded token IDs
+
+# "attention_mask" → a 1/0 mask telling which tokens are real (1) or padding (0)
+
+# So before .with_format("torch"), you usually do something like
+
+def process(row):
+    ids = row["padded_tokenized"]
+    mask = [1 if token != tokenizer.pad_token_id else 0 for token in ids]
+    return {"input_ids": ids, "attention_mask": mask}
+
+processed = data.apply(process, axis=1, result_type="expand")
+data["input_ids"] = processed["input_ids"]
+data["attention_mask"] = processed["attention_mask"]
+# -----------------------------------------------------------------------
 
 # 🎯 Initialize Trainer with training loop setup and dataset
 trainer = Trainer(
