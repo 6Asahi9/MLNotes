@@ -59,6 +59,17 @@ history = model.fit(
     validation_data=(test_images, to_categorical(test_labels))
 )
 
+# in model.fit you can use verbose = somevalue
+# | Value | Meaning                                                                   |
+# | ----- | ------------------------------------------------------------------------- |
+# | `0`   | **No output** — training runs silently. 🤫                                |
+# | `1`   | **Progress bar** — shows you epoch %, loss, accuracy, etc (default). 🟩📊 |
+# | `2`   | **One line per epoch** — simpler, cleaner logs. 📄                        |
+
+# and batch size so it will work fast and not do all the calculations at once 
+# Larger batch size = Fewer updates
+# Faster, but might get stuck in bad places (local minima)
+
 # 📈 Convert training history to a DataFrame
 history_df = pd.DataFrame(history.history)
 
