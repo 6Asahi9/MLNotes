@@ -31,7 +31,7 @@ plt.show()
 
 # 🏗️ Build the CNN model using Sequential API
 model = Sequential([
-    Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(28, 28, 1)),
+    Conv2D(32, kernel_size=(3, 3), padding ='SAME', activation='relu', input_shape=(28, 28, 1)),
     MaxPooling2D(pool_size=(2, 2)),
     Conv2D(32, kernel_size=(3, 3), activation='relu'),
     MaxPooling2D(pool_size=(2, 2)),
