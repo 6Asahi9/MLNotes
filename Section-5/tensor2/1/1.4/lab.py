@@ -88,6 +88,7 @@ checkpoint = ModelCheckpoint(filepath=checkpoint_path,
                              monitor='val_loss',
                              save_best_only=True,
                              save_weights_only=True,
+                             save_freq='epoch',
                              mode='min',
                              verbose=1)
 
