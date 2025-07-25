@@ -122,6 +122,36 @@ from lora import adjust_lora_rank
 
 # Set the rank of the LoRA layers (experiment with values)
 adjust_lora_rank(model, rank=2)
+
+from lora import adjust_lora_rank
+
+# Adjust the rank for LoRA
+adjust_lora_rank(model, rank=4)  # Experiment with different rank values
+
+# Experiment with additional parameters
+alpha = 16 # Scaling factor for LoRA
+dropout_rate = 0.1 # Dropout rate for regularization
+use_bias = True # Whether to include bias in the model layers
+
+# Example of modifying these parameters
+if hasattr(model.config, 'alpha'):
+    model.config.alpha = alpha
+else:
+    print("Warning: model.config does not have attribute 'alpha'")
+
+if hasattr(model.config, 'hidden_dropout_prob'):
+    model.config.hidden_dropout_prob = dropout_rate
+else:
+    print("Warning: model.config does not have attribute 'hidden_dropout_prob'")
+
+if hasattr(model.config, 'use_bias'):
+    model.config.use_bias = use_bias
+else:
+    print("Warning: model.config does not have attribute 'use_bias'")
+
+print(f"Alpha: {alpha}")
+print(f"Dropout Rate: {dropout_rate}")
+print(f"Using Bias: {use_bias}")
 ```
 
 ---
