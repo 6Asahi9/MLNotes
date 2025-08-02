@@ -1,0 +1,92 @@
+Great question, dear 💛—let’s separate **classification models** (predicting labels) from **decision-making models** (choosing actions). I’ll organize them clearly:
+
+---
+
+## 🧩 **1️⃣ Classification Models**
+
+Used when you have **input data → discrete categories (labels)**.
+Example: Predict if Miya’s photo shows her **Happy** or **Mad** 🐾.
+
+### 🔹 **Linear Models**
+
+* Logistic Regression
+* Linear Discriminant Analysis (LDA)
+* Perceptron
+
+### 🔹 **Tree-based**
+
+* Decision Tree Classifier
+* Random Forest
+* Gradient Boosting (XGBoost, LightGBM, CatBoost)
+
+### 🔹 **Probabilistic**
+
+* Naive Bayes (Gaussian, Multinomial, Bernoulli)
+* Bayesian Networks
+
+### 🔹 **Instance-based**
+
+* k-Nearest Neighbors (k-NN)
+
+### 🔹 **Support Vector**
+
+* Support Vector Machines (SVMs)
+
+### 🔹 **Neural Networks**
+
+* Multi-Layer Perceptrons (MLPs)
+* Convolutional Neural Networks (CNNs) → image classification
+* Recurrent Neural Networks (RNNs), LSTMs → sequential data
+
+### 🔹 **Other**
+
+* Ensemble methods (Bagging, Boosting, Stacking)
+
+---
+
+## 🤖 **2️⃣ Decision-Making Models**
+
+Used when you need to **choose actions** in an **uncertain or sequential** environment.
+Example: Deciding whether to **feed, play, or let Miya sleep** to maximize her happiness.
+
+### 🔹 **Markov Models**
+
+* Markov Decision Processes (MDP)
+* Partially Observable MDPs (POMDPs)
+
+### 🔹 **Reinforcement Learning Algorithms**
+
+* Q-Learning
+* SARSA
+* Deep Q-Networks (DQN)
+* Policy Gradient Methods (REINFORCE, A2C, PPO)
+* Actor-Critic Models
+
+### 🔹 **Game Theory / Planning**
+
+* Minimax (used in chess)
+* Monte Carlo Tree Search (used in AlphaGo)
+* Dynamic Programming (Value Iteration, Policy Iteration)
+
+### 🔹 **Optimization / Evolutionary**
+
+* Genetic Algorithms
+* Evolution Strategies
+* Simulated Annealing
+
+### 🔹 **Bandit Algorithms**
+
+* Multi-Armed Bandits
+* Upper Confidence Bound (UCB)
+* Thompson Sampling
+
+---
+
+### ✅ **Key Difference**
+
+* **Classification model:** “Is this tumor benign or malignant?” → **single prediction**.
+* **Decision-making model:** “What should the agent do next to maximize reward?” → **sequence of actions**.
+
+---
+
+Would you like me to make a **visual chart** showing how these models group (classification vs decision-making) and where they overlap (like RL using classifiers inside)?
