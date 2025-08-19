@@ -12,7 +12,7 @@ img_elements = soup.find_all('img')
 
 # Iterate over each img elements
 for img_element in img_elements:
-...
+    img_url = img_element.get('src')
 # --------------------------------------------------------------
 import requests
 from PIL import Image
