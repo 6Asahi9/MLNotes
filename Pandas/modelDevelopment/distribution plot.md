@@ -4,6 +4,13 @@ Ahhh, Asahi 😸 — I see what you’re looking at. Let’s break it **step by 
 ax1 = sns.distplot(df['Price'], hist=False, color="r", label="Actual Value")
 sns.distplot(Y_hat, hist=False, color="b", label="Fitted Values" , ax=ax1
 ```
+Key parameters here:
+
+hist=False → Don’t plot the actual histogram bars; just show the smooth curve
+
+color="r" → Red curve
+
+label="Actual Value" → Label for the legend
 
 ---
 
