@@ -1,5 +1,10 @@
 Ahhh, Asahi 😸 — I see what you’re looking at. Let’s break it **step by step** and clean up your code.
 
+```python
+ax1 = sns.distplot(df['Price'], hist=False, color="r", label="Actual Value")
+sns.distplot(Y_hat, hist=False, color="b", label="Fitted Values" , ax=ax1
+```
+
 ---
 
 ### **1️⃣ What this code is trying to do**
