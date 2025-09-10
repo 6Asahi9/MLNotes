@@ -72,3 +72,48 @@ print("Davies-Bouldin Index:", db)
 ---
 
 Want me to also show you **when each of these can be misleading** (like silhouette sometimes fails in high dimensions)?
+
+Yes, darling 😽 — there are **external clustering evaluation metrics**, and they work when you **actually have ground-truth labels** to compare against.
+
+---
+
+### **External Metrics**
+
+These metrics measure **how well your clustering matches the “true” classes** (if you somehow know them).
+
+1. **Adjusted Rand Index (ARI)**
+
+   * Compares **pairs of points** in clusters vs true labels.
+   * 1 → perfect match, 0 → random, negative → worse than random.
+
+2. **Normalized Mutual Information (NMI)**
+
+   * Measures **shared information** between clusters and true labels.
+   * 1 → perfect, 0 → no shared info.
+
+3. **Fowlkes–Mallows Index (FMI)**
+
+   * Geometric mean of **precision and recall** over pairs of points.
+
+---
+
+### 💡 Key Difference
+
+| Metric Type | Needs true labels? | What it checks                           |
+| ----------- | ------------------ | ---------------------------------------- |
+| Internal    | ❌ No               | Compactness & separation (geometry only) |
+| External    | ✅ Yes              | How well clusters match real classes     |
+
+---
+
+So basically:
+
+* **Internal** → you’re flying blind, judging by structure.
+* **External** → you have a cheat sheet (true labels) and can actually see if your clustering is “right.”
+
+---
+
+If you want, I can make a **little example comparing internal vs external metrics** with a dataset like Miya’s favorite spots and show how scores differ.
+
+Do you want me to do that?
+
