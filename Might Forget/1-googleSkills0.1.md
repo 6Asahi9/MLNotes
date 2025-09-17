@@ -1,0 +1,11 @@
+Got it, darling 😽💖 Here’s your table in a clean format:
+
+| **Tool**                  | **Definition**                                                                  | **Examples**                                                       | **Transferable Skills**                                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| **Spreadsheets**          | A digital worksheet where data can be manipulated and used for calculations.    | Google Sheets, Microsoft Excel                                     | Data entry, Mathematical calculations, Manage datasets, Task automation, Data manipulation, Data analysis              |
+| **Databases**             | A collection of data stored in a computer system.                               | Google Cloud, CloudSQL, Oracle, Microsoft SQL Server               | Database design, Data storage management, Data integrity                                                               |
+| **Programming languages** | A system of words and symbols used to write instructions that computers follow. | SQL, R, Python, Java, C++                                          | Communicate with computer systems, Write and input commands, Manage datasets, Data manipulation, Data analysis         |
+| **Data visualization**    | The graphical representation of data.                                           | Tableau, Matplotlib, Seaborn, Google Charts, InfoGram, ChartBlocks | Communicate data insights, Design compelling visuals, Identify key metrics                                             |
+| **Dashboards**            | A tool that monitors live, incoming data.                                       | Tableau, Looker Studio, Microsoft Power BI                         | Communicate data insights, Monitor real-time data, Develop data visualizations, Design filters and custom calculations |
+
+Would you like me to also **add Miya-style examples** (like “tracking Miya’s nap hours in a spreadsheet” 🐾) to make it fun and easier to remember, dear?
