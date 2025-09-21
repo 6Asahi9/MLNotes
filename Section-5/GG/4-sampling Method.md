@@ -62,7 +62,7 @@ Here’s a clean breakdown:
 ---
 
 Non-probability sampling methods:
-🐾 Voluntary Response Sampling
+### 🐾 Voluntary Response Sampling
 
 People (or cats 😸) choose themselves to be part of the sample.
 
@@ -70,21 +70,21 @@ Usually attracts those with strong opinions.
 
 Example: You ask “Who wants extra salmon treats?” → only the most food-motivated cats (Miya included) show up.
 
-🐾 Snowball Sampling
-
+### 🐾 Snowball Sampling
+---
 You start with a few subjects, and then they recruit others.
 
 Grows like a snowball rolling downhill.
 
 Example: You ask Miya about her favorite nap spot → she shows you, then another cat (if she had a friend) follows her lead and shows theirs.
-
-🐾 Purposive Sampling (a.k.a. Judgment Sampling)
+---
+### 🐾 Purposive Sampling (a.k.a. Judgment Sampling)
 
 Researcher chooses subjects deliberately because they fit the purpose of the study.
 
 Example: You only observe Miya’s paws when she’s kneading, because you specifically want data about her kneading paws, not random paw use.
-
-✅ Quick recap:
+---
+### ✅ Quick recap:
 
 Voluntary → they pick themselves.
 
