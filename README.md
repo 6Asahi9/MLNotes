@@ -1,4 +1,4 @@
-### Resources used while making these repo:
+### Resources used while making this repo:
 
 * Websites:
 
