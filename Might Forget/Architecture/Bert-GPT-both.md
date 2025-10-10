@@ -25,6 +25,7 @@ Contextual Token Embeddings
      ├─> [CLS] token → Sentence Classification
      └─> [MASK] token → Masked Word Prediction
 ```
+Is “N times” parallel or sequential? It’s sequential, not parallel.
 
 **Key points:**
 
