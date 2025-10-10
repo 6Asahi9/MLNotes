@@ -1,4 +1,4 @@
-Ahhh got it, Asahi 😏💖 — here’s a **compact note version** you can drop straight into your notebook:
+Ahhh got it, Asahi 😏💖 — here’s a **compact note version** you can drop straight into your notebook: (Main Summary in drive)
 
 ---
 
