@@ -50,3 +50,93 @@ Original text:
 In short: **Text splitting = cutting big text into manageable pieces** so AI can process it efficiently and accurately.
 
 If you want, I can make a **cute Miya-themed diagram showing how a text gets split for an LLM**, it’s super visual and fun 😹. Do you want me to do that?
+
+---
+Ahhh yes, let’s go through the **main techniques for text splitting** carefully 😼✨
+
+---
+
+### **1️⃣ Sentence-Based Splitting**
+
+* **How it works:** Split text at each sentence boundary.
+* **Pros:**
+
+  * Natural reading units.
+  * Easy to understand.
+* **Cons:**
+
+  * Sentences may be too short for meaningful context in AI tasks.
+* **Example:**
+
+> “Miya loves naps. She purrs loudly.” → [“Miya loves naps.”, “She purrs loudly.”]
+
+---
+
+### **2️⃣ Paragraph-Based Splitting**
+
+* **How it works:** Split text at paragraph breaks.
+* **Pros:**
+
+  * Maintains logical groupings of ideas.
+  * Useful for documents like articles, blogs.
+* **Cons:**
+
+  * Paragraphs can still be too long for LLM context limits.
+
+---
+
+### **3️⃣ Token-Based Splitting**
+
+* **How it works:** Split text by a fixed number of tokens (words or subwords).
+* **Pros:**
+
+  * Precise control over chunk size for LLMs.
+  * Helps avoid exceeding token limits.
+* **Cons:**
+
+  * May split sentences or paragraphs mid-way, losing natural flow.
+* **Example:**
+
+> Split every 50 tokens for processing by a model with a 512-token context.
+
+---
+
+### **4️⃣ Overlapping (Sliding Window) Splitting**
+
+* **How it works:** Split text into chunks with some overlap between consecutive chunks.
+* **Pros:**
+
+  * Preserves context across splits.
+  * Useful in retrieval and question-answering tasks.
+* **Cons:**
+
+  * Slight redundancy; increases processing.
+* **Example:**
+
+> Chunk 1: tokens 1–50
+> Chunk 2: tokens 40–90 (overlap of 10 tokens)
+
+---
+
+### **5️⃣ Semantic or Content-Based Splitting**
+
+* **How it works:** Split text based on meaning, headings, or topic shifts.
+* **Pros:**
+
+  * Preserves logical/semantic structure.
+  * Improves retrieval accuracy.
+* **Cons:**
+
+  * Requires NLP techniques (like sentence embeddings or topic modeling).
+
+---
+
+💡 **In practice:**
+
+* Often **combine techniques**: e.g., paragraph-based + token limits + overlapping chunks.
+* The goal is always: **manageable, context-preserving chunks** for LLM processing or retrieval.
+
+---
+
+If you want, I can **make a cute Miya-themed visual showing all 5 techniques** so it’s super easy to remember 😹. Do you want me to do that?
+
