@@ -3,11 +3,11 @@ Perfect! Let’s solve this **step by step** — slowly and clearly. 🐾
 ---
 
 ### **Your vectors**
-
+$$
 [
 X = [3, 4], \quad Y = [-1, -1]
 ]
-
+$$
 **Note:** These are **1×2 row vectors**, not 1×1. (1×1 would be just a single number.)
 
 ---
